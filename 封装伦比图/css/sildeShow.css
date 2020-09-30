@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slideShow {
+  width: 1226px;
+  height: 460px;
+  margin: 0 auto;
+  position: relative;
+}
+.slideShow .imgList {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slideShow .imgList .imgItem {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.slideShow .imgList .active {
+  opacity: 1;
+}
+
+.slideShow .btn {
+  position: absolute;
+  top: calc(50% - 35px);
+  height: 70px;
+  line-height: 70px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+}
+.slideShow .btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.slideShow .pre {
+  left: 0;
+}
+.slideShow .next {
+  right: 0;
+}
+.slideShow .dotList {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  padding: 0 30px 40px;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.slideShow .dotList .dotItem {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 3px;
+}
+.slideShow .dotList .active {
+  background-color: #ffffff;
+}
